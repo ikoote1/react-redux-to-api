@@ -6,7 +6,11 @@ const Data = () => {
     return(
         <div>
             {users.map((user) => (
-                <div>{user.name}</div>
+                <div key={user.id}>
+                    <h3>{user.firstName}</h3>
+                    {' '}
+                    <h3>{user.lastName}</h3>
+                </div>
             ))}
         </div>
     )
